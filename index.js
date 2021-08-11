@@ -32,3 +32,15 @@ if(emailRegex.test(email)){
 else{
     console.log('Invalid');
 }
+
+// As a User need to follow pre-defined Mobile Format
+// - E.g. 91 9919819801 - Country code follow by space and 10 digit number
+var phone = "91 9876543210";
+var phoneRegex = /^[\d][\d][ ][\d]{10}$/;
+
+if(phoneRegex.test(phone)){
+    console.log('Valid');
+}
+else{
+    console.log('Invalid');
+}
