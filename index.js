@@ -88,3 +88,14 @@ if(password4Regex.test(password4)){
 else{
     console.log('Invalid: Special Character');
 }
+
+//Final Password
+var password5 = "IamJohn1@";
+var password5Regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$/;
+
+if(password5Regex.test(password5)){
+    console.log('Valid: Password');
+}
+else{
+    console.log('Invalid: Password');
+}
