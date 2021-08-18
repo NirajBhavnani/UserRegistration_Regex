@@ -57,10 +57,10 @@ else{
 }
 
 //Atleast 1 one uppercase
-var password1 = "JohnSnow12";
-var password1Regex = /(?=.*[A-Z])\w+/;
+var password2 = "JohnSnow12";
+var password2Regex = /(?=.*[A-Z])\w+/;
 
-if(password1Regex.test(password1)){
+if(password2Regex.test(password2)){
     console.log('Valid: Uppercase');
 }
 else{
