@@ -55,3 +55,14 @@ if(password1Regex.test(password1)){
 else{
     console.log('Invalid: !=8');
 }
+
+//Atleast 1 one uppercase
+var password1 = "JohnSnow12";
+var password1Regex = /(?=.*[A-Z])\w+/;
+
+if(password1Regex.test(password1)){
+    console.log('Valid: Uppercase');
+}
+else{
+    console.log('Invalid: Uppercase');
+}
