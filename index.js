@@ -77,3 +77,14 @@ if(password3Regex.test(password3)){
 else{
     console.log('Invalid: Number');
 }
+
+//One Special character
+var password4 = "JohnSnow12@";
+var password4Regex = /(?=.*[@#$%^&+=]).{8,}/;
+
+if(password4Regex.test(password4)){
+    console.log('Valid: Special Character');
+}
+else{
+    console.log('Invalid: Special Character');
+}
