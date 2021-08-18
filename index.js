@@ -44,3 +44,14 @@ if(phoneRegex.test(phone)){
 else{
     console.log('Invalid');
 }
+
+//As a User need to follow pre-defined Password rules. Rule1– minimum 8 Characters
+var password1 = "JohnSnow12";
+var password1Regex = /.{8,}/;
+
+if(password1Regex.test(password1)){
+    console.log('Valid: >=8');
+}
+else{
+    console.log('Invalid: !=8');
+}
