@@ -66,3 +66,14 @@ if(password1Regex.test(password1)){
 else{
     console.log('Invalid: Uppercase');
 }
+
+//Atleast 1 number
+var password3 = "JohnSnow12";
+var password3Regex = /(?=.*[0-9])\w+/;
+
+if(password3Regex.test(password3)){
+    console.log('Valid: Number');
+}
+else{
+    console.log('Invalid: Number');
+}
